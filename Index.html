@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Yashita 🎀</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#fff5fa;
+  color:#88566f;
+  overflow-x:hidden;
+}
+
+button{border:none;cursor:pointer;font-family:inherit}
+
+#intro{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:25px;
+  background:linear-gradient(135deg,#ffe3ef,#fff4fa,#f8ddec);
+}
+
+#intro h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,10vw,75px);
+  color:#c56f98;
+  margin:15px;
+}
+
+#intro img{
+  width:200px;
+  border-radius:25px;
+  margin:20px;
+  animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+  50%{transform:translateY(-10px)}
+}
+
+.open-btn{
+  background:#d17ca3;
+  color:white;
+  padding:15px 30px;
+  border-radius:30px;
+  margin-top:20px;
+  box-shadow:0 5px 20px #edbfd5;
+}
+
+#main{display:none}
+
+section{
+  padding:65px 20px;
+  text-align:center;
+}
+
+.hero{
+  min-height:90vh;
+  background:linear-gradient(135deg,#fff0f6,#fce4ef);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.hero img{
+  width:min(320px,85%);
+  border-radius:25px;
+  box-shadow:0 10px 30px #edc4d8;
+  margin:25px;
+}
+
+.hero h1,.title{
+  font-family:'Playfair Display',serif;
+  color:#c06b94;
+}
+
+.hero h1{
+  font-size:clamp(40px,9vw,70px);
+}
+
+.title{
+  font-size:35px;
+  margin-bottom:20px;
+}
+
+.subtitle{
+  font-size:13px;
+  letter-spacing:2px;
+  color:#b77b98;
+}
+
+.card{
+  max-width:650px;
+  margin:25px auto;
+  padding:25px;
+  background:white;
+  border-radius:25px;
+  box-shadow:0 8px 30px #efd1df;
+  line-height:1.9;
+}
+
+.player{
+  max-width:430px;
+  margin:30px auto;
+  padding:25px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#fff0f6,#fce4ef);
+  box-shadow:0 8px 25px #eec9dc;
+}
+
+.album{
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-radius:20px;
+  margin:15px auto;
+}
+
+audio{
+  width:100%;
+  margin-top:20px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  max-width:950px;
+  margin:30px auto;
+}
+
+.photo{
+  background:white;
+  padding:12px;
+  border-radius:20px;
+  box-shadow:0 7px 25px #edcddd;
+}
+
+.photo img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.photo p{
+  padding:15px;
+  font-family:'Playfair Display',serif;
+  color:#bd6d94;
+}
+
+.certificate{
+  max-width:650px;
+  margin:auto;
+  padding:30px;
+  border:5px double #d89ab8;
+  border-radius:25px;
+  background:#fffafe;
+}
+
+.certificate h2{
+  font-family:'Playfair Display',serif;
+  color:#bd6c93;
+  margin:15px;
+}
+
+.note{
+  max-width:650px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:25px;
+  line-height:2;
+  box-shadow:0 8px 25px #efd1df;
+}
+
+.btn{
+  background:#ce79a1;
+  color:white;
+  padding:13px 25px;
+  border-radius:30px;
+  margin-top:20px;
+}
+
+footer{
+  background:#fce5ef;
+  text-align:center;
+  padding:30px;
+  color:#bd7b99;
+}
+
+.heart{
+  position:fixed;
+  color:#eca9c8;
+  z-index:-1;
+  animation:float 8s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh)}
+  to{transform:translateY(-10vh)}
+}
+
+</style>
+</head>
+
+<body>
+
+<script>
+for(let i=0;i<20;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="♡";
+h.style.left=Math.random()*100+"%";
+h.style.animationDuration=(5+Math.random()*8)+"s";
+h.style.fontSize=(15+Math.random()*25)+"px";
+document.body.appendChild(h);
+}
+</script>
+
+<!-- Opening -->
+<div id="intro">
+
+<img src="cat1.png">
+
+<p>✿ A LITTLE SURPRISE ✿</p>
+
+<h1>For Yashita 🎀</h1>
+
+<p>Someone made something special for you ♡</p>
+
+<button class="open-btn" onclick="openWebsite()">
+Open Your Surprise 💌
+</button>
+
+</div>
+
+<!-- Website -->
+<div id="main">
+
+<!-- Welcome -->
+<section class="hero">
+
+<p class="subtitle">A LITTLE WORLD OF HAPPINESS</p>
+
+<img src="cat1.png">
+
+<h1>Dear Yashita ♡</h1>
+
+<p>You deserve all the happiness in the world 🌷</p>
+
+<button class="btn" onclick="scrollToSong()">
+Your Song 🎵
+</button>
+
+</section>
+
+<!-- Song -->
+<section id="songSection">
+
+<p class="subtitle">A SONG FOR YOU</p>
+
+<h2 class="title">Heeriye ♡</h2>
+
+<p>Play this song and enjoy your little surprise 🎶</p>
+
+<div class="player">
+
+<img src="cat2.png" class="album">
+
+<h3>Heeriye — For Yashita 💗</h3>
+
+<audio controls>
+<source src="song.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+<p style="margin-top:15px">Made with love ♡</p>
+
+</div>
+
+</section>
+
+<!-- Gallery -->
+<section>
+
+<p class="subtitle">A LITTLE GALLERY</p>
+
+<h2 class="title">Cute Little Cats 🐱</h2>
+
+<p>Three little cuties to make you smile 🎀</p>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="cat1.png">
+<p>Little Cutie ♡</p>
+</div>
+
+<div class="photo">
+<img src="cat2.png">
+<p>Princess Vibes 👑</p>
+</div>
+
+<div class="photo">
+<img src="cat3.png">
+<p>Sending Hugs 💗</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Princess Certificate -->
+<section>
+
+<p class="subtitle">A ROYAL DECREE</p>
+
+<h2 class="title">Princess Certificate 👑</h2>
+
+<div class="certificate">
+
+<div style="font-size:60px">👑</div>
+
+<p>OFFICIALLY PRESENTED TO</p>
+
+<h2>Yashita</h2>
+
+<p>For being a beautiful soul and a wonderful person.</p>
+
+<br>
+
+<p>Royal Privileges:</p>
+
+<p>♡ Unlimited happiness</p>
+<p>♡ Extra chocolates 🍫</p>
+<p>♡ Lots of laughter</p>
+<p>♡ Infinite love</p>
+<p>♡ Princess forever 🎀</p>
+
+<br>
+
+<p>Signed with love</p>
+
+<h2>Your Bestie ♡</h2>
+
+</div>
+
+</section>
+
+<!-- Letter -->
+<section>
+
+<p class="subtitle">A LITTLE MESSAGE</p>
+
+<h2 class="title">A Letter For You 💌</h2>
+
+<div class="note">
+
+Dear Yashita,
+
+<br><br>
+
+You are a beautiful soul and you deserve all the happiness, love and beautiful moments in the world.
+
+<br><br>
+
+Never stop smiling, never stop being yourself, and always remember that you are special.
+
+<br><br>
+
+Whenever you feel sad, come back to this little website and let these cute cats remind you to smile. 🐱
+
+<br><br>
+
+Sending you lots of hugs, love and pink hearts!
+
+<br><br>
+
+<strong>With love, Your Bestie ♡</strong>
+
+</div>
+
+<button class="btn" onclick="alert('Sending you infinite hugs and love! 💗🐱🌷')">
+One Last Surprise 💝
+</button>
+
+</section>
+
+<footer>
+Made with ♡ for Yashita 🎀
+</footer>
+
+</div>
+
+<script>
+
+function openWebsite(){
+document.getElementById("intro").style.display="none";
+document.getElementById("main").style.display="block";
+window.scrollTo(0,0);
+}
+
+function scrollToSong(){
+document.getElementById("songSection").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+</script>
+
+</body>
+</html>
